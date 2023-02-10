@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Appbar from "./Components/Appbar";
+import Table from "./Components/Table";
+import Googledirections from "./Components/Googledirections";
+import Alerts from "./Components/Alerts";
+import Progressbar from "./Components/Progressbar";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Appbar />
+      <p>Appbar component</p>
+      <Button variant="contained">Hello World</Button>
+      <p> App component</p>
+      <Table />
+      <p>Table component</p>
+      <Googledirections />
+      <p>Googledirections Component</p>
+      <Alerts />
+      <p>Alert Component</p>
+      <Progressbar />
+      <p>Progressbar Component</p>
     </div>
   );
 }
